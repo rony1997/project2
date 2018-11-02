@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.default')
 
 @section('content')
 
@@ -6,9 +6,9 @@
         <div class="card-title"><h1>Contact</h1>
             <p class="lead">Please use this form to contact us.</p></div>
         <div class="card-body">
-            <form action={{route('contact')}} method="">
+            <form action={{route('contact.store')}} method="post">
                 @csrf
-                //contact form
+
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input name="name" type="text" class="form-control" id="Name" placeholder="Name">
