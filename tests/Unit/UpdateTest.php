@@ -5,17 +5,18 @@ use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use App\User;
 use App\Car;
-class CountTest extends TestCase
+class UpdateTest extends TestCase
 {
     /**
      * A basic test example.
      *
      * @return void
      */
-    public function testUserCount()
+    public function testUpdateUser()
     {
-        $users=User::all();
-        $users->count();
-        $this->assertEquals(51,count($users),"Should return 50 users");
+        $user = User::find(5);
+        $user->name = 'Steve Smith';
+        $user->save();
+        $this->assertDatabaseHas('users', ["name" => "Steve Smith"]);
     }
 }
