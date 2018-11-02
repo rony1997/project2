@@ -15,6 +15,9 @@ class CreateCarsTable extends Migration
     {
         Schema::create('cars', function (Blueprint $table) {
             $table->increments('id');
+            $table->text('make');
+            $table->text('model');
+            $table->integer('year');
             $table->timestamps();
         });
     }
