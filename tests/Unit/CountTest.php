@@ -16,6 +16,6 @@ class CountTest extends TestCase
     {
         $users=User::all();
         $users->count();
-        $this->assertEquals(51,count($users),"Should return 50 users");
+        $this->assertEquals(50,count($users),"Should return 50 users");
     }
 }
