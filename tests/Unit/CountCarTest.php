@@ -13,6 +13,6 @@ class CountCarTest extends TestCase
     {
         $cars= car::all();
         $cars->count();
-        $this->assertEquals(50, count($cars), "Should return 50 cars");
+        $this->assertEquals(52, count($cars), "Should return 50 cars");
     }
 }
