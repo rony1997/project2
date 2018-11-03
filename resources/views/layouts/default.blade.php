@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-//header and footer
+
 @include('includes.head')
 
 <body>

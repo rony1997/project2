@@ -1,5 +1,5 @@
 @extends('layouts.default')
-<br><br>
+<br><br><br>
 @section('content')
     <h1>This is my home page</h1>
     <p class="lead"></p>
